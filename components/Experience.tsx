@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import WorkIcon from "@mui/icons-material/Work";
 import { FaReact, FaJava, FaNodeJs, FaPython, FaGithub } from "react-icons/fa"; // Importing tech icons
 import PlaceIcon from "@mui/icons-material/Place";
+import Image from "next/image";
 
 const Experience = () => {
   const experiences = [
@@ -95,7 +96,7 @@ const Experience = () => {
           whileInView={{y: 0}}
         >
           <div className="flex flex-col sm:flex-row items-center mb-8">
-            <img
+            <Image
               src={exp.logo}
               alt={exp.company}
               className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-purple-600 shadow-xl mb-4 sm:mb-0 sm:mr-8"

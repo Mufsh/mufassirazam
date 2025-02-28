@@ -10,9 +10,9 @@ import {
   SiKubernetes,
   SiGooglecloud,
 } from "react-icons/si"; // Tech stack icons
-import { BsFillImageFill } from "react-icons/bs"; // Image Icon for projects
 import { RiExternalLinkFill } from "react-icons/ri";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
@@ -125,7 +125,7 @@ const projects = [
   },
   {
     title: "Employee Manager GUI",
-    techStack: [<FaJava />],
+    techStack: [<FaJava key={"Java"}/>],
     description:
       "Employee management system with a Java-based GUI for adding, searching, and editing records.",
     link: "https://github.com/your-link",
@@ -174,7 +174,7 @@ const Projects = () => {
               transition={{ delay: index * 0.3, duration: 0.6 }}
             >
               <div className="relative">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-56 object-cover rounded-t-xl"
@@ -239,7 +239,7 @@ const Projects = () => {
               transition={{ delay: index * 0.3, duration: 0.6 }}
             >
               <div className="relative">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-56 lg:h-96 object-cover rounded-t-xl"

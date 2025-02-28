@@ -3,10 +3,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { Box, Button, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import Image from "next/image";
 
-// You can add your image here
-import profileImage from "path-to-your-image.jpg"; // Replace with your actual image path
 
 const Header = () => {
   return (
@@ -24,7 +23,7 @@ const Header = () => {
         animate={{ scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <img
+        <Image
           src="/321927.jpg" // Add your background image here
           alt="Background"
           className="object-cover w-full h-full opacity-20"
@@ -38,7 +37,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="mb-6"
       >
-        <img
+        <Image
           src={"/image.jpeg"}
           alt="Profile"
           className="rounded-full border-4 border-gray-400 w-32 h-32 object-cover mt-20 md:mt-0"

@@ -4,6 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import DateRangeIcon from "@mui/icons-material/DateRange";
 import GradeIcon from "@mui/icons-material/Grade";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Education = () => {
   const education = [
@@ -56,7 +57,7 @@ const Education = () => {
             transition={{ delay: index * 0.2, duration: 1 }}
           >
             <div className="relative">
-              <img
+              <Image
                 src={edu.image}
                 alt={edu.institution}
                 className="w-full h-64 object-cover rounded-t-lg"
