@@ -14,7 +14,7 @@ const Education = () => {
       duration: "November 2020 – May 2024",
       location: "Kolkata, India",
       score: "CGPA - 8.51",
-      image: "jucse.webp", // Placeholder Image for University
+      image: "/jucse.webp", // Placeholder Image for University
     },
     {
       institution: "Jawahar Navodaya Vidyalaya Prayagraj",
@@ -51,9 +51,9 @@ const Education = () => {
           <motion.div
             key={index}
             className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all ease-in-out duration-300"
-            initial={{ opacity: 0, y: 50 }} 
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }} 
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ delay: index * 0.2, duration: 1 }}
           >
             <div className="relative">
@@ -61,6 +61,8 @@ const Education = () => {
                 src={edu.image}
                 alt={edu.institution}
                 className="w-full h-64 object-cover rounded-t-lg"
+                width={2000}
+                height={1000}
               />
               <div className="absolute top-4 left-4 p-2 bg-gray-900 rounded-full">
                 <SchoolIcon className="text-white" fontSize="large" />

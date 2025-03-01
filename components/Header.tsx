@@ -27,6 +27,8 @@ const Header = () => {
           src="/321927.jpg" // Add your background image here
           alt="Background"
           className="object-cover w-full h-full opacity-20"
+          width={10}
+          height={10}
         />
       </motion.div>
 
@@ -41,6 +43,8 @@ const Header = () => {
           src={"/image.jpeg"}
           alt="Profile"
           className="rounded-full border-4 border-gray-400 w-32 h-32 object-cover mt-20 md:mt-0"
+          width={2000}
+          height={1000}
         />
       </motion.div>
 
@@ -51,7 +55,7 @@ const Header = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        MD MUFASSIR AZAM
+        MUFASSIR AZAM
       </motion.h1>
 
       {/* Role Description */}

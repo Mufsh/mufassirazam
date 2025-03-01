@@ -178,6 +178,8 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-56 object-cover rounded-t-xl"
+                  width={2000}
+                  height={1000}
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 transition-opacity opacity-0 hover:opacity-80 flex justify-center items-center">
                   <Link href={project.link} target="_main">
@@ -243,6 +245,8 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-56 lg:h-96 object-cover rounded-t-xl"
+                  width={2000}
+                  height={1000}
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 transition-opacity opacity-0 hover:opacity-80 flex justify-center items-center">
                   <Link href={project.link} target="_main">

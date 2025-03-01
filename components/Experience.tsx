@@ -75,14 +75,14 @@ const Experience = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <motion.div 
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 4}}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 4 }}
       >
-      <h2 className="text-3xl sm:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 mb-8 sm:mb-12 text-center">
-        Experience
-      </h2>
+        <h2 className="text-3xl sm:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 mb-8 sm:mb-12 text-center">
+          Experience
+        </h2>
       </motion.div>
 
       {experiences.map((exp, index) => (
@@ -93,13 +93,15 @@ const Experience = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 2 }}
-          whileInView={{y: 0}}
+          whileInView={{ y: 0 }}
         >
           <div className="flex flex-col sm:flex-row items-center mb-8">
             <Image
               src={exp.logo}
               alt={exp.company}
               className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-purple-600 shadow-xl mb-4 sm:mb-0 sm:mr-8"
+              width={2000}
+              height={1000}
             />
             <div className="text-center sm:text-left">
               <h3 className="text-2xl sm:text-3xl font-semibold text-white hover:text-purple-600 transition-colors duration-300">
