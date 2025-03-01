@@ -79,7 +79,7 @@ const Header = () => {
           <EmailIcon fontSize="large" className="text-gray-300" />
         </motion.a>
         <motion.a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/mufassir-azam-2a0547205/"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           className="transition-all"
@@ -87,21 +87,21 @@ const Header = () => {
           <LinkedInIcon fontSize="large" className="text-gray-300" />
         </motion.a>
         <motion.a
-          href="https://github.com/your-github"
+          href="https://github.com/Mufsh"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           className="transition-all"
         >
           <GitHubIcon fontSize="large" className="text-gray-300" />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           href="https://twitter.com/your-twitter"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           className="transition-all"
         >
           <TwitterIcon fontSize="large" className="text-gray-300" />
-        </motion.a>
+        </motion.a> */}
       </motion.div>
 
       {/* "Get In Touch" Button */}
@@ -181,7 +181,7 @@ const Header = () => {
           >
             Check out my{" "}
             <a
-              href="https://www.your-certification-link.com"
+              href="https://www.credly.com/badges/f34869dc-918a-406d-bdd8-f237c610c505/public_url"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white font-bold underline"
