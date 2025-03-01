@@ -7,6 +7,9 @@ import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Achievements from '../components/Achievements';
 import Footer from '../components/Footer';
+import Certificates from '@/components/Certificates';
+import CodingProfiles from '@/components/CodingProfiles';
+import ContactMe from '@/components/ContactMe';
 
 export default function Home() {
   return (
@@ -19,6 +22,9 @@ export default function Home() {
         <Projects />
         <Skills />
         <Achievements />
+        <Certificates/>
+        <CodingProfiles/>
+        <ContactMe/>
       </main>
       <Footer />
     </div>

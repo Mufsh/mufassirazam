@@ -24,7 +24,7 @@ const Header = () => {
         transition={{ duration: 1 }}
       >
         <Image
-          src="/321927.jpg" // Add your background image here
+          src="/321927.jpg"
           alt="Background"
           className="object-cover w-full h-full opacity-20"
           width={10}
