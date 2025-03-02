@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLink, FaJava } from "react-icons/fa"; // GitHub, Live project links, Java Icon
+import { FaGithub, FaLink, FaJava } from "react-icons/fa"; 
 import {
   SiPython,
   SiJavascript,
@@ -9,7 +9,8 @@ import {
   SiTailwindcss,
   SiKubernetes,
   SiGooglecloud,
-} from "react-icons/si"; // Tech stack icons
+  SiTensorflow,
+} from "react-icons/si"; 
 import { RiExternalLinkFill } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
@@ -34,17 +35,13 @@ const projects = [
     </p>
 `,
     link: "https://vistaventuresrealtor.com",
-    github: "https://github.com/your-repo",
+    github: "",
     date: "August 2024",
-    image: "/vvr.png", // Add actual image URL here
+    image: "/vvr.png",
   },
   {
     title: "YOLO with CBAM for Improved Object Detection",
-    techStack: [
-      <SiPython key="python" />,
-      <SiPostgresql key="postgresql" />,
-      <SiKubernetes key="k8s" />,
-    ],
+    techStack: [<SiPython key="python" />, <SiTensorflow key="tf" />],
     description: `
       <strong>Improved Object Detection Performance:</strong> Achieved a significant increase in the mean average precision (mAP) score for YOLOv7, from 0.795 to 0.808 at IoU@0.5, by integrating Convolutional Block Attention Module (CBAM) to enhance object detection accuracy.
       <br><br>
@@ -52,8 +49,8 @@ const projects = [
       <br><br>
       <strong>Improved Detection in Complex Environments:</strong> Demonstrated improved robustness in vehicle detection, particularly in complex traffic environments with dense objects, occlusions, and varying scales, with CBAM enhancing object localization and classification.
     `,
-    link: "https://github.com/your-link",
-    github: "https://github.com/your-repo",
+    link: "https://github.com/Mufsh/yolov7-cbam",
+    github: "https://github.com/Mufsh/yolov7-cbam",
     date: "August 2023 - April 2024",
     image: "/yolo.png",
   },
@@ -63,6 +60,7 @@ const projects = [
       <SiNextdotjs key="next" />,
       <SiPostgresql key="postgresql" />,
       <SiKubernetes key="k8s" />,
+      <SiGooglecloud key="gcp" />,
     ],
     description: `<p class="description">
     <strong>Built a Cloud-Native Real Estate & Socioeconomic Platform:</strong> Developed a full-stack application for Hausoos, a non-profit organization focusing on real estate trends, using Next.js, React, and Tailwind CSS, with backend services deployed on GCP.
@@ -75,9 +73,9 @@ const projects = [
     </p>
 `,
     link: "https://hausoosglobal.com",
-    github: "https://github.com/your-repo",
+    github: "",
     date: "August 2024",
-    image: "/hausoos.png", // Add actual image URL here
+    image: "/hausoos.png",
   },
   {
     title: "Recruita",
@@ -89,10 +87,23 @@ const projects = [
     ],
     description:
       "A full-stack recruitment platform designed to streamline the hiring process and improve recruitment workflows.",
-    link: "https://github.com/your-link",
-    github: "https://github.com/your-repo",
+    link: "https://recruita.vercel.app",
+    github: "https://github.com/Mufsh/recruita",
     date: "November 2024",
-    image: "", // No image
+    image: "",
+  },
+  {
+    title: "Yogify",
+    techStack: [
+      <SiReact key="react" />,
+      <SiPostgresql key="postgresql" />,
+    ],
+    description:
+      "Full-stack app for registering for Yoga classes using PostgreSQL and React.",
+    link: "https://yogify.vercel.app",
+    github: "https://github.com/Mufsh/yogify",
+    date: "June 2024",
+    image: "",
   },
   {
     title: "Book For You",
@@ -103,10 +114,10 @@ const projects = [
     ],
     description:
       "Book Recommender system combining Popularity-based and Collaborative Filtering algorithms.",
-    link: "https://github.com/your-link",
-    github: "https://github.com/your-repo",
+    link: "https://github.com/Mufsh/Book-Recommender",
+    github: "https://github.com/Mufsh/Book-Recommender",
     date: "September 2022",
-    image: "", // No image
+    image: "",
   },
   {
     title: "Art Of Words",
@@ -118,20 +129,20 @@ const projects = [
     ],
     description:
       "Full-stack web app with AI-driven image generation using OpenAI DALL·E API.",
-    link: "https://github.com/your-link",
-    github: "https://github.com/your-repo",
+    link: "https://artofwords.netlify.app/",
+    github: "https://github.com/Mufsh/AI-Image-Generator",
     date: "January 2023",
-    image: "", // No image
+    image: "",
   },
   {
     title: "Employee Manager GUI",
-    techStack: [<FaJava key={"Java"}/>],
+    techStack: [<FaJava key={"Java"} />],
     description:
       "Employee management system with a Java-based GUI for adding, searching, and editing records.",
-    link: "https://github.com/your-link",
-    github: "https://github.com/your-repo",
+    link: "https://github.com/Mufsh/University-Employee-Managment-System",
+    github: "https://github.com/Mufsh/University-Employee-Managment-System",
     date: "October 2020",
-    image: "", // No image
+    image: "",
   },
   {
     title: "Bookify",
@@ -142,10 +153,10 @@ const projects = [
     ],
     description:
       "Full-stack book management app with instant summaries using PostgreSQL and FastAPI.",
-    link: "https://github.com/your-link",
-    github: "https://github.com/your-repo",
+    link: "https://github.com/Mufsh/bookify",
+    github: "https://github.com/Mufsh/bookify",
     date: "June 2024",
-    image: "", // No image
+    image: "",
   },
 ];
 
@@ -162,7 +173,6 @@ const Projects = () => {
         Projects
       </h2>
 
-      {/* Top Projects Section */}
       <div className="max-w-7xl mx-auto px-4 mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.slice(0, 2).map((project, index) => (
@@ -214,12 +224,15 @@ const Projects = () => {
                     <FaLink className="inline mr-2" /> Live Project
                   </a>
                   <a
-                    href={project.github}
+                    href={project.github.length === 0 ? "/" : project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
                   >
-                    <FaGithub className="inline mr-2" /> GitHub Repo
+                    <FaGithub className="inline mr-2" />{" "}
+                    {project.github.length === 0
+                      ? "Private Repository"
+                      : "Github Repo"}
                   </a>
                 </div>
                 <p className="text-gray-500 text-sm mt-4">{project.date}</p>
@@ -229,7 +242,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Hausoos Global Section */}
       <div className="max-w-7xl mx-auto px-4 mb-12">
         <div className="grid grid-cols-1 gap-10">
           {projects.slice(2, 3).map((project, index) => (
@@ -273,7 +285,7 @@ const Projects = () => {
 
                 <div className="flex justify-between mt-6">
                   <a
-                    href={project.link}
+                    href={project.github.length === 0 ? "/" : project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -286,7 +298,9 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
                   >
-                    <FaGithub className="inline mr-2" /> GitHub Repo
+                    {project.github.length === 0
+                      ? "Private Repository"
+                      : "Github Repo"}
                   </a>
                 </div>
                 <p className="text-gray-500 text-sm mt-4">{project.date}</p>
@@ -296,7 +310,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Remaining Projects Section */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.slice(3).map((project, index) => (

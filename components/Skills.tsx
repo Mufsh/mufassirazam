@@ -116,7 +116,6 @@ const Skills = () => {
         My Skills
       </h2>
 
-      {/* Skills Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillsData.map((category, index) => (
           <motion.div
@@ -151,7 +150,6 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* Decorative Elements */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
         initial={{ opacity: 0 }}

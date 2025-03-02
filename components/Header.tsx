@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
-// import TwitterIcon from "@mui/icons-material/Twitter";
 import { Button, Typography } from "@mui/material";
 import Image from "next/image";
 
@@ -10,13 +9,12 @@ import Image from "next/image";
 const Header = () => {
   return (
     <motion.div
-      id="header"
+      id="about"
       className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white relative"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Background Image */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full z-[-1]"
         initial={{ scale: 1.1 }}
@@ -32,7 +30,6 @@ const Header = () => {
         />
       </motion.div>
 
-      {/* Profile Picture */}
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
@@ -48,7 +45,6 @@ const Header = () => {
         />
       </motion.div>
 
-      {/* Name */}
       <motion.h1
         className="text-3xl sm:text-6xl font-bold mb-4 text-center font-Poppins"
         initial={{ y: -50 }}
@@ -58,7 +54,6 @@ const Header = () => {
         MUFASSIR AZAM
       </motion.h1>
 
-      {/* Role Description */}
       <motion.p
         className="text-lg sm:text-2xl mb-8 text-center font-Poppins"
         initial={{ y: 50 }}
@@ -68,7 +63,6 @@ const Header = () => {
         Software Developer | Professional Cloud Architect
       </motion.p>
 
-      {/* Social Icons */}
       <motion.div className="flex gap-6 justify-center mb-12">
         <motion.a
           href="mailto:himufassir@gmail.com"
@@ -94,17 +88,7 @@ const Header = () => {
         >
           <GitHubIcon fontSize="large" className="text-gray-300" />
         </motion.a>
-        {/* <motion.a
-          href="https://twitter.com/your-twitter"
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.9 }}
-          className="transition-all"
-        >
-          <TwitterIcon fontSize="large" className="text-gray-300" />
-        </motion.a> */}
       </motion.div>
-
-      {/* "Get In Touch" Button */}
       <motion.div
         initial={{ y: 50 }}
         animate={{ y: 0 }}
@@ -128,9 +112,7 @@ const Header = () => {
         </Button>
       </motion.div>
 
-      {/* About Section (Shortened and Improved) */}
       <motion.div
-        id="about"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}

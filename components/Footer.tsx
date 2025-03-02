@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="p-2 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-2">
-        {/* Social Links */}
+        
         <div className="flex space-x-6">
           <a
             href="https://www.linkedin.com/in/mufassir-azam-2a0547205/"
@@ -30,12 +30,10 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        {/* Copyright */}
         <p className="text-sm text-gray-400 text-center">
           © {new Date().getFullYear()} Mufassir Azam. All rights reserved.
         </p>
 
-        {/* Attribution (Optional) */}
         <p className="text-xs text-gray-500 text-center">
           Made with ❤️ by Mufassir Azam
         </p>

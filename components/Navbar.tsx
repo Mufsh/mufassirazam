@@ -53,7 +53,7 @@ const Navbar = () => {
     <AppBar
       position="fixed"
       sx={{
-        background: "linear-gradient(135deg, #1f2937 0%, #4b5563 100%)", // Dark gradient
+        background: "linear-gradient(135deg, #1f2937 0%, #4b5563 100%)",
         boxShadow: 4,
         fontFamily: "Poppins, sans-serif",
       }}
@@ -67,7 +67,6 @@ const Navbar = () => {
             justifyContent: "space-between",
           }}
         >
-          {/* On Large Screens: Center the Navigation Items */}
           {!isMobile && (
             <div
               className="flex gap-8 justify-center"
@@ -102,7 +101,6 @@ const Navbar = () => {
             </div>
           )}
 
-          {/* On Small Screens: "Mufassir" on the left and Menu Icon on the right */}
           {isMobile && (
             <>
               <Typography
@@ -119,21 +117,19 @@ const Navbar = () => {
                 Mufassir
               </Typography>
 
-              {/* Mobile Menu Icon on the Right */}
               <IconButton color="inherit" onClick={handleClick}>
                 <MenuIcon />
               </IconButton>
             </>
           )}
 
-          {/* Mobile Menu (for small screens) */}
           <Menu
             anchorEl={anchorEl}
             open={Boolean(anchorEl)}
             onClose={handleClose}
             PaperProps={{
               sx: {
-                backgroundColor: "#1f2937", // Dark background for the menu
+                backgroundColor: "#1f2937", 
                 borderRadius: "8px",
               },
             }}

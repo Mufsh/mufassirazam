@@ -13,27 +13,27 @@ const codingProfiles: CodingProfile[] = [
   {
     name: "LeetCode",
     icon: <SiLeetcode className="w-5 h-5 text-orange-500" />,
-    link: "https://leetcode.com/mufassir",
+    link: "https://leetcode.com/u/mufassir/",
   },
   {
     name: "CodeChef",
     icon: <SiCodechef className="w-5 h-5 text-red-500" />,
-    link: "https://codechef.com/users/your-profile",
+    link: "https://www.codechef.com/users/mufassir_azam",
   },
   {
     name: "HackerRank",
     icon: <FaHackerrank className="w-5 h-5 text-green-500" />,
-    link: "https://hackerrank.com/your-profile",
+    link: "https://www.hackerrank.com/profile/himufassir",
   },
   {
     name: "GitHub",
     icon: <FaGithub className="w-5 h-5 text-gray-300" />,
-    link: "https://github.com/your-profile",
+    link: "https://github.com/Mufsh",
   },
   {
     name: "GeeksForGeeks",
     icon: <SiGeeksforgeeks className="w-5 h-5 text-blue-400" />,
-    link: "https://linkedin.com/in/your-profile",
+    link: "https://www.geeksforgeeks.org/user/himufassir/",
   },
 ];
 
@@ -50,7 +50,6 @@ const CodingProfiles: React.FC = () => {
         Coding Profiles
       </h2>
 
-      {/* Profiles Grid */}
       <div className="flex flex-wrap justify-center gap-4">
         {codingProfiles.map((profile, index) => (
           <motion.a

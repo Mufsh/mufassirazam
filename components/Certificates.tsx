@@ -57,7 +57,6 @@ const Certificates: React.FC = () => {
         Certificates
       </h2>
 
-      {/* Certificates Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {certificates.map((certificate, index) => (
           <motion.div
@@ -82,7 +81,6 @@ const Certificates: React.FC = () => {
         ))}
       </div>
 
-      {/* Lightbox for Selected Certificate */}
       {selectedCertificate && (
         <Dialog open={open} onClose={closeCertificate} maxWidth="xl">
           <div className="w-full flex justify-end mb-2 pr-3 text-black">
